@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最简单的轮播效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+        .box {
+            width: 500px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            padding: 5px;
+
+        }
+        .inner{
+            width: 500px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner img{
+            width: 500px;
+            height: 300px;
+            vertical-align: top
+        }
+        ul {
+            width: 1000%;
+            position: absolute;
+            list-style: none;
+            left:0;
+            top: 0;
+        }
+        .inner li{
+            float: left;
+
+        }
+
+        ol {
+            position: absolute;
+            height: 20px;
+            right: 20px;
+            bottom: 20px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        ol li{
+            border:solid 1px purple;border-radius:50%;margin-right:10px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            /*background-color: #fff;*/
+
+            cursor: pointer;
+
+        }
+        ol .current{
+            background-color: green;
+        }
+        #arr{
+            display: none;
+        }
+        #arr span{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -20px;
+            background: #fff;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #000;
+            opacity: 0.5;
+            border: 1px solid #fff;
+        }
+        #arr #right {
+            right: 5px;
+            left: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box">
+    <div class="inner">
+        <!--轮播图-->
+        <ul>
+            <li><a href="#"><img src="img/1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/4.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/5.jpg" alt=""></a></li>
+
+        </ul>
+
+        <ol class="bar">
+
+        </ol>
+        <!--左右焦点-->
+        <div id="arr">
+                    <span id="left">
+                        <
+                    </span>
+            <span id="right">
+                        >
+                    </span>
+        </div>
+
+    </div>
+</div>
+<script src="0001.js" type="text/javascript"></script>
+</body>
+</html>
+

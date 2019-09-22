@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function selectAll(choiceBtn) {
+            var arr = document.getElementsByName("choice");
+            for(var i =0;i<arr.length;i++){
+                arr[i].checked=choiceBtn.checked;
+            }
+        }
+    </script>
+</head>
+<body>
+       <table border="1" width="800px" height="800px">
+           <tr>
+               <td><input type="checkbox" onclick="selectAll(this)"> 选择</td><td>用户名</td><td>邮箱</td><td>电话</td><td>性别</td><td>操作</td>
+           </tr>
+           <tr>
+               <td><input type="checkbox" name="choice"> </td><td>qq</td><td>12456783@qq.com</td><td>12345678</td><td>女</td><td>发邮件 改名 请假</td>
+           </tr>
+           <tr>
+               <td><input type="checkbox" name="choice"> </td><td>qq</td><td>12456783@qq.com</td><td>12345678</td><td>女</td><td>发邮件 改名 请假</td>
+           </tr>
+           <tr>
+               <td><input type="checkbox" name="choice"> </td><td>qq</td><td>12456783@qq.com</td><td>12345678</td><td>女</td><td>发邮件 改名 请假</td>
+           </tr>
+           <tr>
+               <td><input type="checkbox" name="choice"> </td><td>qq</td><td>12456783@qq.com</td><td>12345678</td><td>女</td><td>发邮件 改名 请假</td>
+           </tr>
+           <tr>
+               <td><input type="checkbox" name="choice"> </td><td>qq</td><td>12456783@qq.com</td><td>12345678</td><td>女</td><td>发邮件 改名 请假</td>
+           </tr>
+           <tr>
+               <td><input type="checkbox" name="choice"> </td><td>qq</td><td>12456783@qq.com</td><td>12345678</td><td>女</td><td>发邮件 改名 请假</td>
+           </tr>
+           <tr>
+               <td><input type="checkbox" name="choice"> </td><td>qq</td><td>12456783@qq.com</td><td>12345678</td><td>女</td><td>发邮件 改名 请假</td>
+           </tr>
+       </table>
+</body>
+</html>

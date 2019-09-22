@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>个人博客</title>
+    <meta name="keywords" content="王奇琦的个人博客" />
+    <meta name="description" content="王奇琦个人博客网站" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/scroll.js" type="text/javascript"></script>
+</head>
+<body onload="init()">
+<header class="header-navigation">
+    <nav>
+       <div class="logo"><a href="/">可爱小王</a> </div>
+        <h2 id="mnavh"><span class="navicon"></span></h2>
+           <ul id="starlist">
+               <li><a id="selected" href="/" title="首页">首页</a> </li>
+       <li class="menu"><a href="/" target="_blank">生活</a>
+               <ul class="sub">
+                   <li><a href="/">1</a> </li>
+                   <li><a href="/">2</a> </li>
+                   <li><a href="/">3</a></li>
+               </ul>
+               <span></span>
+           </li>
+           <li><a href="/">学习</a> </li>
+           <li><a href="/">音乐</a> </li>
+           <li><a href="/">图片</a> </li>
+           <li><a href="/">时间</a> </li>
+           <li><a href="/">相关</a> </li>
+           <li><a href="/">慢调</a> </li>
+
+       </ul>
+        <div class="searchbox">
+            <div class="login">
+                <ul>
+                    <li><a href="login.html" >登录</a></li>
+                    <li><a href="register.html"> 注册</a></li>
+                </ul>
+            </div>
+           <form>
+            <input type="text" class="search" placeholder="请随意搜索">
+            <input type="button" name="" id="" class="btn" >
+            </form>
+        </div>
+       </nav>
+</header>
+<article style="position: relative">
+    <main>
+    <div class="banbox">
+        <div class="banner" id="container">
+            <div class="inner" id="list" >
+        <ul>
+            <li><a href="/"><img src="img/1.jpg"  id="myimg" ></a> </li>
+            <li><a href="/"><img src="img/2.jpg" ></a> </li>
+            <li><a href="/"><img src="img/3.jpg" ></a> </li>
+            <li><a href="/"><img src="img/4.jpg" ></a> </li>
+            <li><a href="/"><img src="img/5.jpg" ></a> </li>
+        </ul>
+                <!--<img src="img/5.jpg" alt="1">-->
+                <!--<img src="img/1.jpg" alt="1">-->
+                <!--<img src="img/2.jpg" alt="2">-->
+                <!--<img src="img/3.jpg" alt="3">-->
+                <!--<img src="img/4.jpg" alt="4">-->
+                <!--<img src="img/5.jpg" alt="5">-->
+                <!--<img src="img/1.jpg" alt="5">-->
+                <div id="buttons">
+                    <span index="1" class="on"></span>
+                    <span index="2"></span>
+                    <span index="3"></span>
+                    <span index="4"></span>
+                    <span index="5"></span>
+                </div>
+        <div id="arr">
+            <a id="prev" class="arrow" onclick="preImg()">&lt;</a>
+            <a id="next" class="arrow" onclick="nextImg()">&gt</a>
+        </div>
+    </div>
+    </div>
+        </div>
+        <div class="blank"></div>
+        <div class="clearblank"></div>
+        <div class="tab_box whitebg">
+
+            <div class="tab_buttons">
+                <ul>
+                    <li class="newscurrent">个人博客日记</li>
+
+                    <li>薄雾|永昼</li>
+                    <li>东篱把酒</li>
+                    <li>暗香盈袖</li>
+                    <li>风月尽赴</li>
+
+                </ul>
+            </div>
+            <div class="newstab">
+
+                <div class="newsitem">
+                    <div class="newspic">
+                        <ul>
+                            <li><a href="/"><img src="img/10.jpg"><span>我想要棉花糖 氢气球 还有巧克力</span></a></li>
+                            <li><a href="/"><img src="img/11.jpg"><span>相册里总是充满了回忆</span></a></li>
+
+                        </ul>
+                    </div>
+                    <ul class="newslist">
+                        <li><i></i><a href="/" title="跨过星河迈过月亮成为更好的自己">跨过星河迈过月亮成为更好的自己</a><p>我坚持，无论有多绝望，无论有多悲哀，每天早上起来，都要对自己说，这个世界很好，很强大。这句话，不是在满怀希望时说得，而是在绝望，无助，很痛苦，迷茫的时候，说这句话。要坚信，你是一个勇敢的人。</p></li>
+                        <li><i></i><a href="/" title="电话以外的宁静">电话以外的宁静</a><p>电话很久没有响过了，我的QQ也很久没有在线了，消失了很多天，刚刚结识的朋友因为我身上又起了红疹，每天都发来消息询问我的情况，我做到了这么多天来的沉默，我相信，没有网络，我还是可以继续我自己的生活</p></li>
+                        <li><i></i><a href="/" title="遇见一个未知的你">遇见一个未知的你</a><p>听着那熟悉的歌曲看着那一张张可爱的图片.-读着我们共同欣赏的诗……也许我们曾经相遇,看着你远去的背影 ,沿着你来的方向 ,回忆时间穿梭于幸福的点点滴滴....</p></li>
+                        <li><i></i><a href="/" title="世上再美的风景 都不及回家的那段路">世上再美的风景 都不及回家的那段路</a><p>遍山遍野去找你，但凡是山上有月色流注到的地方我都到了，不见你底踪迹.</p></li>
+                        <li><i></i><a href="/" title="我的肩上是风 风上是闪烁的星群">我的肩上是风 风上是闪烁的星群！</a><p>“你为什么要那么努力?”“想去的地方很远，想要的东西很贵，喜欢的人很优秀，父亲的白发，周围人的嘲笑，以及，天生傲骨。”</p></li>
+
+                    </ul>
+                </div>
+
+                <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
+
+
+                    <h3 class="blogtitle"><a href="/study/2/18.html" target="_blank" >最后的午餐</a></h3>
+                    <span class="blogpic"><a href="/study/2/18.html" title="最后的午餐"><img src="img/13.jpg" alt="最后的午餐"></a></span>
+
+                    <p class="blogtext">昨晚上做梦了，我本不想记下，可是又怕这种似乎有点真实的感觉就这样溜走，枕头湿了...我也记不得我是在梦中哭过还是...... &amp;shy;在一个小餐馆，男孩叫了一份鱼香茄子、麻婆... </p>
+                    <div class="bloginfo">
+                        <ul>
+                            <li class="author"></li>
+                            <li class="lmname"><a href="/study/2/"  target="_blank" >目录2</a></li>
+                            <li class="timer">2019-07-15</li>
+                            <li class="view"><span>81</span>已阅读</li>
+                            <li class="like">7</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
+
+
+                    <h3 class="blogtitle"><a href="/study/2/17.html" target="_blank" >Just One Last Dance</a></h3>
+                    <span class="blogpic"><a href="/study/2/17.html" title="Just One Last Dance"><img src="img/5.jpg" alt="Just One Last Dance"></a></span>
+
+                    <p class="blogtext">《Just One Last Dance 》是一个朋友介绍给我听的，当时一听就喜欢上它了，直到现在，就像《因为是女子》一样，我空间的主打歌还挺多的，唯独这两首让我舍不得换掉......如... </p>
+                    <div class="bloginfo">
+                        <ul>
+                            <li class="author"></li>
+                            <li class="lmname"><a href="/study/2/"  target="_blank" >目录2</a></li>
+                            <li class="timer">2019-07-15</li>
+                            <li class="view"><span>65</span>已阅读</li>
+                            <li class="like">6</li>
+                        </ul>
+                    </div>
+                </div>
+
+    </main>
+    <aside class="sidebar" style="position: static;left;auto;width:32%;">
+    <div class="toppic">
+        <li><a href="/" target="_blank">
+            <i><img src="img/6.jpg"</i>
+            <h2>还要多远才能进入你的心</h2>
+            <span>水星记</span>
+        </a></li>
+        <li><a href="/" target="_blank">
+            <i><img src="img/7.jpg"> </i>
+            <h2>生活是这样子啊不如诗</h2>
+            <span>平淡</span>
+        </a> </li>
+        <li><a href="/" target="_blank">
+            <i><img src="img/8.jpg"> </i>
+            <h2>生活是这样子啊不如诗</h2>
+            <span>平淡</span>
+        </a> </li>
+        <li><a href="/" target="_blank">
+            <i><img src="img/9.jpg"> </i>
+            <h2>生活是这样子啊不如诗</h2>
+            <span>平淡</span>
+        </a> </li>
+        <li><a href="/" target="_blank">
+            <i><img src="img/10.jpg"> </i>
+            <h2>生活是这样子啊不如诗</h2>
+            <span>平淡</span>
+        </a> </li>
+        <li><a href="/" target="_blank">
+            <i><img src="img/11.jpg"> </i>
+            <h2>生活是这样子啊不如诗</h2>
+            <span>平淡</span>
+        </a> </li>
+    </div>
+    </aside>
+
+</article>
+<footer></footer>
+</body>
+</html>

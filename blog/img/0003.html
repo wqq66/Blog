@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var provinceArr = new Array(5);
+        provinceArr[0] = new Array("北京市");
+        provinceArr[1] = new Array("郑州市","洛阳市","驻马店市");
+        provinceArr[2] = new Array("西安市","宝鸡市","延安市");
+        provinceArr[3] = new Array("菏泽市","济南市","青岛市");
+        provinceArr[4] = new Array("石家庄市","唐山市","秦皇岛市");
+        function provinceChange(province) {
+            var city = document.getElementById("city");
+            console.log(province.value);
+            console.log(typeof(province.value));
+            if(province.value=="-1"){
+                city.innerHTML= "<option value='-1'>请选择</option>"
+                return;
+            }
+            // console.log(provinceArr[province.value]);
+            var cityArr = provinceArr[province.value];
+            city.options.length=0;
+            for(var i = 0;i<cityArr.length;i++){
+            var cityoption = document.createElement("option");
+            cityoption.innerText = cityArr[i];
+            city.appendChild(cityoption);
+            }
+        }
+    </script>
+</head>
+<body>
+     <select onchange="provinceChange(this)">
+         <option value="-1">请选择</option>
+         <option value="0">北京市</option>
+         <option value="1">河南省</option>
+         <option value="2">陕西省</option>
+         <option value="3">山东省</option>
+         <option value="4">河北省</option>
+     </select>
+     <select id="city">
+         <option value="-1">请选择</option>
+     </select>
+</body>
+</html>

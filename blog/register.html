@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/register.css" type="text/css">
+    <script>
+    function check() {
+        var user = document.getElementById("user");
+        var userMsg = document.getElementById("userMsg");
+        var isPass = true;
+        var length = user.value.length;
+        if (length<3||length>6) {
+            // alert("账号长度必须为3-6位");
+            userMsg.innerText="账号长度必须为3-6位";
+            isPass = false;
+        }else{
+            userMsg.innerText="";
+        }
+        var email = document.getElementById("email").value;
+        var emailMsg = document.getElementById("emailMsg");
+        var p = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
+        if(p.test(email)==false){
+            // alert("此邮箱格式不正确");
+            emailMsg.innerText="此邮箱格式不正确";
+            isPass = false;
+        }else{
+            emailMsg.innerText="";
+        }
+        var password = document.getElementById("password").value;
+        var passwordMsg = document.getElementById("passwordMsg");
+        var rePassword = document.getElementById("rePassword").value;
+        if(password.length<5||password.length>10) {
+            // alert("密码在6-10之间");
+            passwordMsg.innerText="密码在6-10之间";
+            isPass = false;
+        } else {passwordMsg.innerText="";
+            if (password !== rePassword) {
+                // alert("两次密码不一致");
+                passwordMsg.innerText="两次密码不一致";
+                isPass = false;
+            }else{
+                passwordMsg.innerText="";
+            }
+        }
+        // noinspection JSAnnotator
+        return isPass;
+        }
+      function checkuser(user) {
+          var userMsg = document.getElementById("userMsg");
+          var length = user.value.length;
+          if (length < 3 || length > 6) {
+              userMsg.innerText = "账号长度必须为3-6位";
+          } else {
+              userMsg.innerText = "";
+          }
+      }
+          function checkemail(email) {
+              var emailMsg = document.getElementById("emailMsg");
+              var p = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
+              if(p.test(email.value)==false){
+                  emailMsg.innerText="此邮箱格式不正确";
+              }else{
+                  emailMsg.innerText="";
+              }
+          }
+          function checkpassword() {
+              var password = document.getElementById("password");
+              var passwordMsg = document.getElementById("passwordMsg");
+              var rePassword = document.getElementById("rePassword").value;
+              if (password.value.length < 5 || password.value.length > 10) {
+                  // alert("密码在6-10之间");
+                  passwordMsg.innerText = "密码在6-10之间";
+                  isPass = false;
+              } else {
+                  passwordMsg.innerText = "";
+                  if (password.value !== rePassword) {
+                      // alert("两次密码不一致");
+                      passwordMsg.innerText = "两次密码不一致";
+                      isPass = false;
+                  } else {
+                      passwordMsg.innerText = "";
+                  }
+              }
+          }
+    </script>
+</head>
+<body>
+     <div class="register">
+         <h2 class="title">Register</h2>
+         <form action="" class="register-content" onsubmit="return check()">
+             <input type="text"  id="user" placeholder="请输入账号..." onblur="checkuser(this)"><font color="red" id="userMsg"></font>
+             <input type="text"  id="email" placeholder="请输入邮箱..." onblur="checkemail(this)"><font color="red" id="emailMsg"></font>
+             <input type="password"  id="password" placeholder="请输入密码..." onblur="checkpassword()"><font color="red" id="passwordMsg"></font>
+             <input type="password"  id="rePassword" placeholder="请重复密码..." onblur="checkpassword()"><font color="red" id="repasswordMsg"></font>
+             <input type="submit" value="sign in">
+         </form>
+     </div>
+</body>
+</html>
